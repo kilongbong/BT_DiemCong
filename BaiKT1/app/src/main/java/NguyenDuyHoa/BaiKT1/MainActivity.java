@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String dem = "User and Password is correct" ;
-                String username = "hoa";
-                String password = "hoa";
+              
                 if(edtusername.getText().toString().equals(username) && edtpass.getText().toString().equals(password)){
                     Toast.makeText(MainActivity.this, "User and Password is correct", Toast.LENGTH_SHORT).show();
                 }else{
