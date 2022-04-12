@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
         btnlg.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View view) {
-                String dem = "User and Password is correct" ;
                 String username = "maicuongtho";
                 String password = "1";
                 if(edtusername.getText().toString().equals(username) && edtpass.getText().toString().equals(password)){
                     Toast.makeText(MainActivity.this, "User and Password is correct", Toast.LENGTH_SHORT).show();
+                    KQ.setText("User and Password is correct");
                 }else{
                     Toast.makeText(MainActivity.this, "User and Password is wrong", Toast.LENGTH_SHORT).show();
-                    KQ.setText(String.valueOf(dem));
+                    KQ.setText("User and Password is wrong");
                 }
             }
         });
